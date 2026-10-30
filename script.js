@@ -2,28 +2,18 @@ gsap.registerPlugin(ScrollTrigger);
 
 document.addEventListener("DOMContentLoaded", () => {
   
-  // 1. حركة دخول النصوص في الهيرو
-  gsap.from(".hero-text > *", {
-    opacity: 0,
-    y: 30,
-    duration: 1,
-    stagger: 0.15,
-    ease: "power3.out",
-    delay: 0.2
-  });
+  // حركة دخول فخمة جداً في الهيرو
+  const tl = gsap.timeline();
 
-  // 2. حركة دخول صورة العطر
-  gsap.from(".hero-img-container", {
-    opacity: 0,
-    scale: 0.9,
-    duration: 1.5,
-    ease: "power3.out",
-    delay: 0.4
-  });
+  tl.to(".hero-subtitle", { opacity: 1, visibility: "visible", y: 0, duration: 1, startAt: { y: 20 }, ease: "power3.out", delay: 0.2 })
+    .to(".hero-title", { opacity: 1, visibility: "visible", y: 0, duration: 1.5, startAt: { y: 40 }, ease: "power4.out" }, "-=0.8")
+    .to(".hero-bottle", { opacity: 1, visibility: "visible", duration: 2, startAt: { scale: 0.9 }, ease: "power2.out" }, "-=1.0")
+    .to(".hero-desc", { opacity: 1, visibility: "visible", y: 0, duration: 1, startAt: { y: 20 }, ease: "power3.out" }, "-=1.2")
+    .to(".hero-btn", { opacity: 1, visibility: "visible", y: 0, duration: 1, startAt: { y: 20 }, ease: "power3.out" }, "-=0.8");
 
-  // 3. تأثير Parallax لصورة العطر عند التمرير
-  gsap.to(".floating-bottle", {
-    y: 120,
+  // تأثير Parallax عند التمرير لصورة العطر
+  gsap.to(".hero-bottle", {
+    y: 150,
     ease: "none",
     scrollTrigger: {
       trigger: ".hero-section",
@@ -33,15 +23,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 4. حركة ظهور البطاقات الزجاجية عند التمرير
-  gsap.utils.toArray(".reveal").forEach((element) => {
-    gsap.to(element, {
+  // ظهور النوتات العطرية عند التمرير
+  gsap.utils.toArray(".reveal").forEach((el) => {
+    gsap.to(el, {
       opacity: 1,
       y: 0,
-      duration: 0.8,
+      duration: 1,
       ease: "power3.out",
       scrollTrigger: {
-        trigger: element,
+        trigger: el,
         start: "top 85%",
         toggleActions: "play none none none"
       }
