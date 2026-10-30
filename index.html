@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta
+    name="description"
+    content="NOIR/FORM — engineered scent for those who move differently."
+  />
+  <title>NOIR/FORM — Engineered Scent</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Project styles -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body class="bg-[#050505] text-white antialiased">
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav-glass" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="NOIR/FORM home">
+          NOIR<span>/</span>FORM
+        </a>
+
+        <div class="nav-links">
+          <a href="#technology">Technology</a>
+          <a href="#formula">The Formula</a>
+          <a href="#price">Shop</a>
+        </div>
+
+        <a class="nav-cta" href="#price">
+          <span>Discover the scent</span>
+          <span class="nav-cta-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-frame" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid-lines" aria-hidden="true"></div>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            A new frequency in fragrance
+          </p>
+
+          <h1 id="hero-title">
+            ENGINEERED<br />
+            <span>SCENT.</span>
+          </h1>
+
+          <p class="hero-description">
+            A study in contrast. Precision-crafted fragrance for a presence
+            that stays long after you’ve left.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button-primary" href="#price">
+              <span>Pre-order now</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#technology">
+              Explore the formula <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Interactive 3D perfume bottle">
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-glow" aria-hidden="true"></div>
+
+          <div class="hero-model-label model-label-top" aria-hidden="true">
+            <span>NO. 01 / EAU DE PARFUM</span>
+            <span>50 ML</span>
+          </div>
+
+          <canvas id="hero-canvas" aria-label="3D model of the NOIR/FORM perfume bottle">
+            Your browser does not support the canvas element.
+          </canvas>
+
+          <div class="hero-model-label model-label-bottom" aria-hidden="true">
+            <span>OBJECT — 001</span>
+            <span class="model-interaction">DRAG TO ROTATE <b>↗</b></span>
+          </div>
+
+          <div class="hero-side-note" aria-hidden="true">
+            <span>FORM FOLLOWS FEELING</span>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>01 — 03</span>
+          <span class="scroll-cue"><span></span> Scroll to explore</span>
+          <span>PARIS / EVERYWHERE</span>
+        </div>
+      </section>
+
+      <section class="manifesto section-frame" aria-labelledby="manifesto-title">
+        <div class="manifesto-marker reveal">
+          <span class="section-number">01</span>
+          <span class="marker-line"></span>
+          <span class="eyebrow">Designed to linger</span>
+        </div>
+
+        <div class="manifesto-content reveal">
+          <h2 id="manifesto-title">
+            NOT JUST A SCENT.<br />
+            <span>A NEW</span> <span class="accent-text">SIGNATURE.</span>
+          </h2>
+          <p>
+            Built like an object. Composed like a feeling. NOIR/FORM brings
+            considered design and expressive perfumery into one enduring form.
+          </p>
+        </div>
+      </section>
+
+      <section class="technology section-frame" id="technology" aria-labelledby="technology-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="section-number">02</span> The architecture</p>
+            <h2 id="technology-title">SCENT, <span>DECONSTRUCTED.</span></h2>
+          </div>
+          <p class="section-intro">
+            Three layers, composed to evolve with you. Every note has a purpose.
+          </p>
+        </div>
+
+        <div class="tech-stage">
+          <div class="tech-stage-grid" aria-hidden="true"></div>
+          <div class="tech-stage-glow" aria-hidden="true"></div>
+
+          <div class="tech-bottle" aria-label="Fragrance notes">
+            <div class="tech-bottle-top" aria-hidden="true"></div>
+            <div class="tech-bottle-neck" aria-hidden="true"></div>
+            <div class="tech-bottle-body" aria-hidden="true">
+              <span class="bottle-mark">N/F</span>
+              <span class="bottle-name">NOIR<br />FORM</span>
+              <span class="bottle-volume">EAU DE PARFUM · 50 ML</span>
+            </div>
+          </div>
+
+          <div class="note-callout note-top reveal">
+            <span class="callout-index">01 / OPEN</span>
+            <span class="callout-line" aria-hidden="true"></span>
+            <div>
+              <h3>Top note</h3>
+              <p>Citrus / bergamot</p>
+            </div>
+          </div>
+
+          <div class="note-callout note-heart reveal">
+            <span class="callout-index">02 / UNFOLD</span>
+            <span class="callout-line" aria-hidden="true"></span>
+            <div>
+              <h3>Heart note</h3>
+              <p>Jasmine / white tea</p>
+            </div>
+          </div>
+
+          <div class="note-callout note-base reveal">
+            <span class="callout-index">03 / REMAIN</span>
+            <span class="callout-line" aria-hidden="true"></span>
+            <div>
+              <h3>Base note</h3>
+              <p>Amber / cedarwood</p>
+            </div>
+          </div>
+
+          <div class="tech-caption" aria-hidden="true">
+            <span>OLFACTIVE STRUCTURE</span>
+            <span>COMPOSITION 01.01</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section-frame" id="formula" aria-labelledby="features-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="section-number">03</span> Considered by design</p>
+            <h2 id="features-title">MADE TO <span>MATTER.</span></h2>
+          </div>
+          <p class="section-intro">
+            Every detail earns its place — from the formula to the glass## Part 1: `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta
+    name="description"
+    content="NOIR/FORM — engineered scent for those who move differently."
+  />
+  <title>NOIR/FORM — Engineered Scent</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Project styles -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-[#050505] text-white antialiased">
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav-glass" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="NOIR/FORM home">
+          NOIR<span>/</span>FORM
+        </a>
+
+        <div class="nav-links">
+          <a href="#technology">Technology</a>
+          <a href="#formula">The Formula</a>
+          <a href="#price">Shop</a>
+        </div>
+
+        <a class="nav-cta" href="#price">
+          <span>Discover the scent</span>
+          <span class="nav-cta-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-frame" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid-lines" aria-hidden="true"></div>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            A new frequency in fragrance
+          </p>
+
+          <h1 id="hero-title">
+            ENGINEERED<br />
+            <span>SCENT.</span>
+          </h1>
+
+          <p class="hero-description">
+            A study in contrast. Precision-crafted fragrance for a presence
+            that stays long after you’ve left.
+          </p>
+
+          <div class="hero## Part 1: `index.html`
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#050505" />
+  <meta name="description" content="NOIR/FORM — engineered scent for those who move differently." />
+  <title>NOIR/FORM — Engineered Scent</title>
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Project stylesheet -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="bg-[#050505] text-white antialiased">
+  <div class="site-shell">
+    <header class="site-header">
+      <nav class="nav-glass" aria-label="Main navigation">
+        <a class="wordmark" href="#home" aria-label="NOIR/FORM home">
+          NOIR<span>/</span>FORM
+        </a>
+
+        <div class="nav-links">
+          <a href="#technology">Technology</a>
+          <a href="#formula">The Formula</a>
+          <a href="#price">Shop</a>
+        </div>
+
+        <a class="nav-cta" href="#price">
+          <span>Discover the scent</span>
+          <span class="nav-cta-icon" aria-hidden="true">↗</span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          type="button"
+          aria-label="Open navigation menu"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-frame" id="home" aria-labelledby="hero-title">
+        <div class="hero-grid-lines" aria-hidden="true"></div>
+
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span>
+            A new frequency in fragrance
+          </p>
+
+          <h1 id="hero-title">
+            ENGINEERED<br />
+            <span>SCENT.</span>
+          </h1>
+
+          <p class="hero-description">
+            A study in contrast. Precision-crafted fragrance for a presence
+            that stays long after you’ve left.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button-primary" href="#price">
+              <span>Pre-order now</span>
+              <span aria-hidden="true">↗</span>
+            </a>
+            <a class="text-link" href="#technology">
+              Explore the formula <span aria-hidden="true">↓</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual" aria-label="Interactive 3D perfume bottle">
+          <div class="hero-orbit orbit-one" aria-hidden="true"></div>
+          <div class="hero-orbit orbit-two" aria-hidden="true"></div>
+          <div class="hero-glow" aria-hidden="true"></div>
+
+          <div class="hero-model-label model-label-top" aria-hidden="true">
+            <span>NO. 01 / EAU DE PARFUM</span>
+            <span>50 ML</span>
+          </div>
+
+          <canvas id="hero-canvas" aria-label="3D model of the NOIR/FORM perfume bottle">
+            Your browser does not support the canvas element.
+          </canvas>
+
+          <div class="hero-model-label model-label-bottom" aria-hidden="true">
+            <span>OBJECT — 001</span>
+            <span class="model-interaction">DRAG TO ROTATE <b>↗</b></span>
+          </div>
+
+          <div class="hero-side-note" aria-hidden="true">
+            <span>FORM FOLLOWS FEELING</span>
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <span>01 — 03</span>
+          <span class="scroll-cue"><span></span> Scroll to explore</span>
+          <span>PARIS / EVERYWHERE</span>
+        </div>
+      </section>
+
+      <section class="manifesto section-frame" aria-labelledby="manifesto-title">
+        <div class="manifesto-marker reveal">
+          <span class="section-number">01</span>
+          <span class="marker-line"></span>
+          <span class="eyebrow">Designed to linger</span>
+        </div>
+
+        <div class="manifesto-content reveal">
+          <h2 id="manifesto-title">
+            NOT JUST A SCENT.<br />
+            <span>A NEW</span> <span class="accent-text">SIGNATURE.</span>
+          </h2>
+          <p>
+            Built like an object. Composed like a feeling. NOIR/FORM brings
+            considered design and expressive perfumery into one enduring form.
+          </p>
+        </div>
+      </section>
+
+      <section class="technology section-frame" id="technology" aria-labelledby="technology-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="section-number">02</span> The architecture</p>
+            <h2 id="technology-title">SCENT, <span>DECONSTRUCTED.</span></h2>
+          </div>
+          <p class="section-intro">
+            Three layers, composed to evolve with you. Every note has a purpose.
+          </p>
+        </div>
+
+        <div class="tech-stage">
+          <div class="tech-stage-grid" aria-hidden="true"></div>
+          <div class="tech-stage-glow" aria-hidden="true"></div>
+
+          <div class="tech-bottle" aria-label="Fragrance notes">
+            <div class="tech-bottle-top" aria-hidden="true"></div>
+            <div class="tech-bottle-neck" aria-hidden="true"></div>
+            <div class="tech-bottle-body" aria-hidden="true">
+              <span class="bottle-mark">N/F</span>
+              <span class="bottle-name">NOIR<br />FORM</span>
+              <span class="bottle-volume">EAU DE PARFUM · 50 ML</span>
+            </div>
+          </div>
+
+          <div class="note-callout note-top reveal">
+            <span class="callout-index">01 / OPEN</span>
+            <span class="callout-line" aria-hidden="true"></span>
+            <div>
+              <h3>Top note</h3>
+              <p>Citrus / bergamot</p>
+            </div>
+          </div>
+
+          <div class="note-callout note-heart reveal">
+            <span class="callout-index">02 / UNFOLD</span>
+            <span class="callout-line" aria-hidden="true"></span>
+            <div>
+              <h3>Heart note</h3>
+              <p>Jasmine / white tea</p>
+            </div>
+          </div>
+
+          <div class="note-callout note-base reveal">
+            <span class="callout-index">03 / REMAIN</span>
+            <span class="callout-line" aria-hidden="true"></span>
+            <div>
+              <h3>Base note</h3>
+              <p>Amber / cedarwood</p>
+            </div>
+          </div>
+
+          <div class="tech-caption" aria-hidden="true">
+            <span>OLFACTIVE STRUCTURE</span>
+            <span>COMPOSITION 01.01</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="features section-frame" id="formula" aria-labelledby="features-title">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span class="section-number">03</span> Considered by design</p>
+            <h2 id="features-title">MADE TO <span>MATTER.</span></h2>
+          </div>
+          <p class="section-intro">
+            Every detail earns its place — from the formula to the glass.
+          </p>
+        </div>
+
+        <div class="bento-grid">
+          <article class="feature-card feature-card-large reveal">
+            <div class="card-topline">
+              <span>01 / PERFORMANCE</span>
+              <span class="card-icon" aria-hidden="true">↗</span>
+            </div>
+            <div class="feature-graphic longevity-graphic" aria-hidden="true">
+              <span class="graphic-ring ring-one"></span>
+              <span class="graphic-ring ring-two"></span>
+              <span class="graphic-ring ring-three"></span>
+              <span class="graphic-core"></span>
+              <span class="graphic-label">48H</span>
+            </div>
+            <div class="feature-card-copy">
+              <h3>48-Hour<br />Longevity</h3>
+              <p>A lasting composition designed to unfold, not fade.</p>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card-vegan reveal">
+            <div class="card-topline">
+              <span>02 / FORMULA</span>
+              <span class="card-icon" aria-hidden="true">↗</span>
+            </div>
+            <div class="vegan-mark" aria-hidden="true">
+              <span>V</span>
+              <i></i>
+            </div>
+            <div class="feature-card-copy">
+              <h3>100% Vegan<br />Formula</h3>
+              <p>Thoughtful ingredients. No animal-derived materials.</p>
+            </div>
+          </article>
+
+          <article class="feature-card feature-card-glass reveal">
+            <div class="card-topline">
+              <span>03 / OBJECT</span>
+              <span class="card-icon" aria-hidden="true">↗</span>
+            </div>
+            <div class="glass-graphic" aria-hidden="true">
+              <span class="glass-shard shard-one"></span>
+              <span class="glass-shard shard-two"></span>
+              <span class="glass-shard shard-three"></span>
+              <span class="glass-flare"></span>
+            </div>
+            <div class="feature-card-copy">
+              <h3>Handcrafted<br />Glass</h3>
+              <p>Made to be kept. Finished by hand with a considered weight.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="price-section section-frame" id="price" aria-labelledby="price-title">
+        <div class="price-orbit" aria-hidden="true"></div>
+        <div class="price-content reveal">
+          <p class="eyebrow"><span class="status-dot"></span> First edition / limited release</p>
+          <h2 id="price-title">MAKE IT<br /><span>PERSONAL.</span></h2>
+          <p class="price-description">
+            Meet your new signature. The first edition of NOIR/FORM, in a
+            50 ml sculptural glass bottle.
+          </p>
+
+          <div class="price-row">
+            <span class="price-value">$185</span>
+            <span class="price-detail">50 ML<br />EAU DE PARFUM</span>
+          </div>
+
+          <a class="button-primary price-button" href="mailto:hello@noirform.example?subject=NOIR%2FFORM%20Pre-order">
+            <span>Reserve your bottle</span>
+            <span aria-hidden="true">↗</span>
+          </a>
+
+          <p class="price-footnote">Complimentary shipping on first-edition orders.</p>
+        </div>
+
+        <div class="price-side-label" aria-hidden="true">OBJECT — 001 / N—F</div>
+      </section>
+    </main>
+
+    <footer class="site-footer section-frame">
+      <a class="wordmark footer-wordmark" href="#home">
+        NOIR<span>/</span>FORM
+      </a>
+
+      <p class="footer-tagline">A new frequency in fragrance.</p>
+
+      <div class="footer-links">
+        <a href="#technology">The architecture</a>
+        <a href="#formula">The formula</a>
+        <a href="mailto:hello@noirform.example">Contact</a>
+      </div>
+
+      <span class="footer-copyright">© 2025 NOIR/FORM</span>
+    </footer>
+  </div>
+
+  <!-- Three.js and OrbitControls -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+
+  <!-- GSAP and ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <!-- Project script -->
+  <script src="./script.js"></script>
+</body>
+</html>
